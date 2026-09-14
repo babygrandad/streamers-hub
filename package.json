@@ -1,6 +1,6 @@
 {
   "name": "streamers-hub",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,7 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
-    "prisma": "^7.10.0",
+    "prisma": "^8.0.0-rc.15",
     "typescript": "^5"
   }
 }
