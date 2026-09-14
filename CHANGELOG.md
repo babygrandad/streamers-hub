@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-09-14 - SH-04
+
+### Added
+- `GET /api/streams` health-check endpoint — returns `{ status, service, timestamp }`
+- `src/interface/` directory, following the same per-domain-subfolder convention as `views/`, `logic/`, `models/`, `components/`. Holds service contracts (e.g. `interface/streams/StreamService.ts`) that `logic/` implements
+- `logic/streams/streamService.ts` implementing `StreamService`, replacing the earlier standalone `health.ts`
+
 ## [0.4.0] - 2026-09-14 - SH-03
 
 ### Added
