@@ -32,6 +32,15 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# AI agent skills (downloaded/synced locally per machine via tool CLIs,
+# e.g. `prisma skills sync`, `npx skills add`; not source we maintain)
+.claude/skills/
+.cursor/skills/
+.devin/skills/
+.agents/skills/
+skills-lock.json
 
 # vercel
 .vercel
@@ -39,3 +48,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.prisma/
+node_modules/
+dist/
+.env

@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-09-14 - SH-03
+
+### Added
+- Prisma Platform project `streamers-hub` created and linked to this directory
+- GitHub repo connected to the Prisma project for branch/deploy automation
+- Hosted Prisma Postgres database (`streamers-hub-dev`) provisioned on the `development` branch; `main`/production database deferred to a later ticket
+- Prisma 8 data contract (`src/prisma/contract.prisma`) with placeholder `User`/`Post` models, applied to the live database and verified end-to-end (create + read round trip)
+- Prisma agent skills scoped to Claude Code only (`--agent claude-code`), gitignored as local-machine artifacts rather than tracked in git
+- `CLAUDE.md`: Prisma skill install instructions, local-only skills policy (generalized to any tool with a similar mechanism), and a "before pushing" checklist (version bump + matching CHANGELOG entry)
+
+### Fixed
+- `.env.example` was unintentionally excluded by the `.env*` gitignore pattern; added `!.env.example` exception so it's tracked
+
 ## [0.3.0] - 2026-09-14 - SH-01
 
 ### Changed
